@@ -1,7 +1,9 @@
 # Radar-Guided Vision Transformer with Cross-Attention Fusion for Object Detection and Depth Estimation
 
 Author: Padmanabh Butala
+
 Email: pb8176@rit.edu
+
 Institution: Rochester Institute of Technology
 
 
@@ -116,7 +118,7 @@ The pipeline includes:
 | Visualization Type                     | Output Example |
 |----------------------------------------|----------------|
 | Front camera image                     | ![CAM_FRONT](Img/image_camfront.png) |
-| LiDAR & Radar projection (image space) | ![Lidar+Radar]() |
+| LiDAR & Radar projection (image space) | ![Lidar+Radar](Img/image_camfront_clipped.png) |
 | 3D Bounding Boxes                      | ![3D Boxes](Img/image_detections.png) |
 | Open3D 3D Scatter                      | ![Open3D](Img/image_3D_Lidar_Radar.png) |
 
