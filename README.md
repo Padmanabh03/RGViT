@@ -115,10 +115,10 @@ The pipeline includes:
 
 | Visualization Type                     | Output Example |
 |----------------------------------------|----------------|
-| Front camera image                     | ![CAM_FRONT](docs/cam_front.jpg) |
-| LiDAR & Radar projection (image space) | ![Lidar+Radar](docs/lidar_radar_overlay.jpg) |
-| 3D Bounding Boxes                      | ![3D Boxes](docs/3d_boxes.jpg) |
-| Open3D 3D Scatter                      | ![Open3D](docs/open3d_scene.jpg) |
+| Front camera image                     | ![CAM_FRONT](Img/cam_front.jpg) |
+| LiDAR & Radar projection (image space) | ![Lidar+Radar](Img/lidar_radar_overlay.jpg) |
+| 3D Bounding Boxes                      | ![3D Boxes](Img/3d_boxes.jpg) |
+| Open3D 3D Scatter                      | ![Open3D](Img/open3d_scene.jpg) |
 
 ---
 
