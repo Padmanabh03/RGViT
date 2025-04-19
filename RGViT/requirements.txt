@@ -1,0 +1,34 @@
+# General
+numpy==1.23.5
+matplotlib==3.7.1
+pandas==1.5.3
+tqdm==4.65.0
+
+# PyTorch
+torch==2.0.1
+torchvision==0.15.2
+torchaudio==2.0.2
+
+# Image + radar handling
+Pillow==9.5.0
+opencv-python==4.8.0.76
+
+# nuScenes SDK (official)
+nuscenes-devkit==1.1.9
+
+# Transformer support (ViT)
+transformers==4.29.2
+scipy==1.10.1
+einops==0.6.1
+
+# Logging and utilities
+yacs==0.1.8
+pyyaml==6.0
+
+# For 3D bounding box visualization (optional)
+pyquaternion==0.9.9
+# mayavi==4.8.1
+open3d==0.17.0
+
+# CUDA Toolkit (if needed for compatibility)
+nvidia-cuda-runtime-cu11==11.7.99 ; platform_system != "Windows"
