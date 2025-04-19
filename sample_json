@@ -1,0 +1,28 @@
+import json
+import os
+
+JSON_PATH = './nuscenes_blobs/train_samples.json'  # Change if needed
+
+def inspect_first_sample():
+    if not os.path.exists(JSON_PATH):
+        print(f"❌ File not found: {JSON_PATH}")
+        return
+
+    with open(JSON_PATH, 'r') as f:
+        data = json.load(f)
+
+    if not data:
+        print("⚠️ JSON file is empty.")
+        return
+
+    first_sample = data[0]
+
+    print("📦 First Sample in Dataset:\n")
+    for key, value in first_sample.items():
+        if isinstance(value, list) and len(value) > 5:
+            print(f"🔑 {key}: [Length: {len(value)}] Example: {value[:2]} ...")
+        else:
+            print(f"🔑 {key}: {value}")
+
+if __name__ == "__main__":
+    inspect_first_sample()

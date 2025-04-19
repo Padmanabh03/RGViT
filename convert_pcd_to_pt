@@ -1,0 +1,44 @@
+import os
+import torch
+from tqdm import tqdm
+from nuscenes.utils.data_classes import RadarPointCloud
+
+BLOBS_RADAR_ROOT = './nuscenes_blobs/samples'  # Adjust if needed
+RADAR_VIEWS = [
+    'RADAR_FRONT',
+    'RADAR_FRONT_LEFT',
+    'RADAR_FRONT_RIGHT',
+    'RADAR_BACK_LEFT',
+    'RADAR_BACK_RIGHT'
+]
+
+def convert_pcd_to_pt_in_dir(radar_dir):
+    if not os.path.exists(radar_dir):
+        print(f"❌ Directory not found: {radar_dir}")
+        return
+
+    files = [f for f in os.listdir(radar_dir) if f.endswith('.pcd')]
+    print(f"\n📡 Found {len(files)} .pcd files in {radar_dir}")
+
+    for fname in tqdm(files, desc=f"Converting {os.path.basename(radar_dir)}"):
+        try:
+            pcd_path = os.path.join(radar_dir, fname)
+            radar_pc = RadarPointCloud.from_file(pcd_path)
+            points = radar_pc.points.T  # Shape: (N, 18)
+
+            tensor = torch.tensor(points, dtype=torch.float32)
+            pt_path = os.path.join(radar_dir, fname.replace('.pcd', '.pt'))
+            torch.save(tensor, pt_path)
+
+        except Exception as e:
+            print(f"❌ Error converting {fname}: {e}")
+
+def main():
+    for radar_view in RADAR_VIEWS:
+        radar_dir = os.path.join(BLOBS_RADAR_ROOT, radar_view)
+        convert_pcd_to_pt_in_dir(radar_dir)
+
+    print("\n✅ Finished converting all radar views!")
+
+if __name__ == '__main__':
+    main()
