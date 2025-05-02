@@ -33,7 +33,7 @@ The end-to-end workflow currently includes
 ## 🧠 Proposed Architecture
 
 <p align="center">
-  <img src="Img/architecture_diagram.png" width="700"/>
+  <img src="Img/RGVIT.png" width="700"/>
 </p>
 
 | Stage | Description |
@@ -61,7 +61,7 @@ Why it matters
 | LiDAR & Radar projection (image space) | ![Lidar+Radar](Img/image_camfront_clipped.png) |
 | 3-D Bounding Boxes                     | ![3D Boxes](Img/image_detections.png) |
 | Open3D 3-D Scatter                     | ![Open3D](Img/image_3D_Lidar_Radar.png) |
-| Depth overlay                          | ![Depth](Img/depth_overlay.png) |
+| Depth overlay                          | ![Depth](Img/detection.png) |
 | Training vs Validation Loss            | ![Loss](Img/loss_graph.png) |
 
 ### Quantitative (nuScenes mini)
@@ -96,7 +96,7 @@ I am actively experimenting, and I’m confident these steps will significantly 
 ## Poster
 
 <p align="center">
-  <img src="Img/poster_rgvit.png" width="800"/>
+  <img src="Img/Poster.png" width="800"/>
 </p>
 
 ---
