@@ -7,8 +7,9 @@
 
 ---
 
-## Project Overview
-This repository contains my master’s capstone project **Radar-Guided Vision Transformer (RGViT)**—a multi-modal transformer that fuses radar and camera data via cross-attention to deliver robust 3-D object detection and depth estimation on the nuScenes dataset.
+## 📌 Project Overview
+
+This repository contains my master’s capstone project **Radar-Guided Vision Transformer (RGViT)** — a multi-modal transformer that fuses camera and radar data using cross-attention for 3D object detection on the nuScenes dataset. In real-world driving, cameras struggle in low-visibility conditions (e.g., fog, rain, night), while radar remains robust but lacks spatial and semantic resolution. Most existing fusion techniques simply concatenate features or fuse them late in the pipeline without learning modality importance. RGViT addresses this by letting radar features guide the vision transformer — focusing attention on motion-salient regions — while vision supplies rich context. The cross-attention mechanism learns to weigh and combine both modalities adaptively, enabling robust perception even under adverse conditions.
 
 ---
 
