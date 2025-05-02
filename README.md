@@ -101,7 +101,7 @@ Why it matters
 | Only Radar       | 35.8  | 28.7 |
 | **RGViT (ours)** | **27.3** | **18.9** |
 
-> *Numbers are early-epoch scores on the 10-scene mini split. Full-dataset training and hyper-parameter sweeps are underway and expected to improve performance.*
+> *Numbers shown are from early-epoch evaluations on the full nuScenes v1.0 dataset. Full training runs and hyper-parameter tuning are in progress and expected to improve final performance.*
 
 ---
 
