@@ -13,8 +13,6 @@ This repository contains my master’s capstone project **Radar-Guided Vision Tr
 ---
 
 ## Directory Structure  
-
-```text
 RadarGuidedViT/                ─── Project root
 │
 ├── Img/                       ── Figures used in README & poster
