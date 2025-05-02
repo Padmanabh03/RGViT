@@ -33,7 +33,7 @@ The end-to-end workflow currently includes
 ## 🧠 Proposed Architecture
 
 <p align="center">
-  <img src="Img/RGVIT.png" width="700"/>
+  <img src="Img/RGViT.png" width="700"/>
 </p>
 
 | Stage | Description |
