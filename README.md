@@ -13,6 +13,8 @@ This repository contains my master’s capstone project **Radar-Guided Vision Tr
 ---
 
 ## Directory Structure  
+
+```text
 RadarGuidedViT/                ─── Project root
 │
 ├── Img/                       ── Figures used in README & poster
@@ -39,6 +41,7 @@ RadarGuidedViT/                ─── Project root
 │
 ├── requirements.txt
 └── README.md                  ─── ← you are here
+```
 
 
 > All absolute paths are overridable via `RGVIT/config.py` or a custom YAML.
