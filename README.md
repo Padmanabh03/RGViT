@@ -1,19 +1,46 @@
 # Radar-Guided Vision Transformer  
 ### Cross-Attention Fusion for 3-D Object Detection & Depth Estimation
 
-**Author:** Padmanabh Butala  
-**Email:** pb8176@rit.edu  
-**Institution:** Rochester Institute of Technology  
+**Author :** Padmanabh Butala  
+**Email :** pb8176@rit.edu  
+**Institution :** Rochester Institute of Technology  
 
 ---
 
 ## Project Overview
-This repository hosts my master’s capstone project **Radar-Guided Vision Transformer (RGViT)**—a multi-modal transformer that fuses radar and camera data via cross-attention to achieve robust 3-D object detection and depth estimation on the nuScenes dataset.
+This repository contains my master’s capstone project **Radar-Guided Vision Transformer (RGViT)**—a multi-modal transformer that fuses radar and camera data via cross-attention to deliver robust 3-D object detection and depth estimation on the nuScenes dataset.
 
 ---
 
-## Directory Structure
-RadarGuidedViT/ │ ├── Img/ # All figures used in this README & poster │ ├── Exploratory Data Analysis/ │ └── scripts/ # Camera, radar, point-cloud visualisation helpers │ ├── RGVIT/ # Model code │ ├── checkpoints/ # Saved weights │ ├── configs/ # YAML / python hyper-parameters │ ├── data/ # Cached tensors / metadata │ ├── eval_output/ # Predictions, renderings, metrics │ ├── models/ # Network components │ │ ├── vit_backbone.py │ │ ├── radar_encoder.py │ │ ├── cross_attention.py │ │ └── detection_head.py │ ├── scripts/ # Train / evaluate drivers │ │ ├── train.py │ │ └── evaluate.py │ ├── utils/ # Geometry, loss, IoU, metrics │ ├── config.py # Global paths │ └── main.py # CLI entry-point │ ├── requirements.txt └── README.md # ← you are here
+## Directory Structure  
+
+```text
+RadarGuidedViT/                ─── Project root
+│
+├── Img/                       ── Figures used in README & poster
+│
+├── Exploratory Data Analysis/ ── Quick-look notebooks & sensor-vis helpers
+│   └── scripts/               ───  camera, radar, point-cloud visualisation
+│
+├── RGVIT/                     ─── Source code of the model
+│   ├── checkpoints/           ─── Pre-trained & intermediate weights
+│   ├── configs/               ─── YAML / python hyper-parameter files
+│   ├── data/                  ─── Cached nuScenes tensors & meta
+│   ├── eval_output/           ─── Predictions, renderings, evaluation JSON
+│   ├── models/                ─── Network blocks
+│   │   ├── vit_backbone.py
+│   │   ├── radar_encoder.py
+│   │   ├── cross_attention.py
+│   │   └── detection_head.py
+│   ├── scripts/               ─── Training & inference drivers
+│   │   ├── train.py
+│   │   └── evaluate.py
+│   ├── utils/                 ─── Geometry, IoU, loss, metrics
+│   ├── config.py              ─── Global path overrides
+│   └── main.py                ─── One-line CLI entry-point
+│
+├── requirements.txt
+└── README.md                  ─── ← you are here
 
 
 > All absolute paths are overridable via `RGVIT/config.py` or a custom YAML.
